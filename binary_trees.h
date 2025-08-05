@@ -1,9 +1,7 @@
-
 #ifndef BINARY_T
 #define BINARY_T
 
 #include <stdlib.h>
-
 
 /**
  * struct binary_tree_s - Binary tree node
@@ -28,8 +26,8 @@ typedef struct binary_tree_s heap_t;
 
 /**
  * struct queue_s - Structure for queue
- * @child: Integer stored in the node
- * @next: Pointer to the next node
+ * @child: Pointer to the child node
+ * @next: Pointer to the next node in the queue
  */
 struct queue_s
 {
@@ -48,7 +46,7 @@ int binary_tree_is_root(const binary_tree_t *node);
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
 void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
-int height(const binary_tree_t *tree)
+size_t binary_tree_height(const binary_tree_t *tree); // 🛠️ corrigé ici
 size_t binary_tree_depth(const binary_tree_t *node);
 size_t binary_tree_size(const binary_tree_t *tree);
 size_t binary_tree_leaves(const binary_tree_t *tree);
@@ -66,10 +64,4 @@ binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
 binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
 int binary_tree_is_bst(const binary_tree_t *tree);
 bst_t *bst_insert(bst_t **tree, int value);
-bst_t *array_to_bst(int *array, size_t size);
-bst_t *bst_search(const bst_t *tree, int value);
-bst_t *bst_remove(bst_t *root, int value);
-int binary_tree_is_avl(const binary_tree_t *tree);
-
-
-#endif
+bst_t *array_to_bst(int *array, size_t s
