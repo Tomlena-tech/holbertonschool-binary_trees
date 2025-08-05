@@ -5,7 +5,7 @@
  *
  * Return: Height or 0 if tree is NULL
  */
-int height(const binary_tree_t *tree)
+size_t height(const binary_tree_t *tree)
 {
         int left_height;
         int right_height;
