@@ -28,5 +28,4 @@ new_node = NULL;
     parent->right = new_node;
 
     return (new_node);
-
- }
+}
