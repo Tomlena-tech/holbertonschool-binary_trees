@@ -1,8 +1,17 @@
+<<<<<<< HEAD
 #ifndef BINARY_TREES_H
 #define BINARY_TREES_H
 
 #include <stdlib.h>
 #include <stdio.h>
+=======
+
+#ifndef BINARY_T
+#define BINARY_T
+
+#include <stdlib.h>
+
+>>>>>>> Ilan-binary
 
 /**
  * struct binary_tree_s - Binary tree node
@@ -27,8 +36,13 @@ typedef struct binary_tree_s heap_t;
 
 /**
  * struct queue_s - Structure for queue
+<<<<<<< HEAD
  * @child: Pointer to the child node
  * @next: Pointer to the next node in the queue
+=======
+ * @child: Integer stored in the node
+ * @next: Pointer to the next node
+>>>>>>> Ilan-binary
  */
 struct queue_s
 {
@@ -70,4 +84,8 @@ bst_t *bst_search(const bst_t *tree, int value);
 bst_t *bst_remove(bst_t *root, int value);
 int binary_tree_is_avl(const binary_tree_t *tree);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> Ilan-binary
 #endif
