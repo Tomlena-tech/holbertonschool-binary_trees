@@ -11,12 +11,12 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
     binary_tree_t *new_node;
 
-    /* Allocation mémoire pour le nouveau nœud */
+
     new_node = malloc(sizeof(binary_tree_t));
     if (new_node == NULL)
         return (NULL);
 
-    /* Initialisation des champs du nœud */
+
     new_node->n = value;
     new_node->parent = parent;
     new_node->left = NULL;
